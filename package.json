@@ -1,7 +1,6 @@
 {
   "name": "dsh-grafana-hosts",
   "version": "0.1.0",
-  "private": true,
   "type": "module",
   "description": "Read-only Grafana access for [DSH] across several hosts: dashboards, live panel data, metrics and alerts, addressed by host name.",
   "exports": {
