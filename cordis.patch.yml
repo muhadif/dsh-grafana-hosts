@@ -1,0 +1,3 @@
+- insert:
+    - id: grafana-hosts
+      name: dsh-grafana-hosts

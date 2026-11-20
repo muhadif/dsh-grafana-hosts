@@ -1,0 +1,60 @@
+{
+  "name": "dsh-grafana-hosts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Read-only Grafana access for [DSH] across several hosts: dashboards, live panel data, metrics and alerts, addressed by host name.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "check.mjs",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-plugin-manager"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/dsh-tools": "^0.2.2-rc.3"
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "grafana",
+    "observability",
+    "prometheus",
+    "promql",
+    "loki",
+    "logql",
+    "dashboards",
+    "alerting"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhadif/dsh-grafana-hosts.git"
+  },
+  "homepage": "https://github.com/muhadif/dsh-grafana-hosts#readme",
+  "bugs": {
+    "url": "https://github.com/muhadif/dsh-grafana-hosts/issues"
+  }
+}

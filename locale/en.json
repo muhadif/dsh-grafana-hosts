@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Grafana hosts",
+    "description": "Read-only Grafana access across several named hosts: search dashboards, read a dashboard, run the queries behind its panels, query PromQL or LogQL directly, and list firing alerts. Tokens stay in the credential store.",
+    "detail": "docs/DETAIL.md"
+  }
+}
